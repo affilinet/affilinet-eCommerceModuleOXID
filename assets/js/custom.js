@@ -1,5 +1,5 @@
 /*!
- * Custom JS for affilinet Advertiser Mobile SDK
+ * Custom CSS for affilinet eCommerce Module Oxid
 */
 
 // Highlight the top nav as scrolling occurs
