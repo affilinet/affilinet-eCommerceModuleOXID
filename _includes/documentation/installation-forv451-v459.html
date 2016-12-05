@@ -1,0 +1,37 @@
+<ol>
+<li>Unzip the affilinet module package</li>
+<li>Copy the folder content <i>"copy_this"</i> in the main directory of your eShop (Upload in binary mode)</li>
+<li>Adjust the templates from the <i>"changed_full"</i> folder to your OXID basic theme templates at the marked lines:</li>
+{% highlight html %}
+<!-- BEGIN | Affiliate Modul -->
+....
+<!-- END | Affiliate Modul -->
+{% endhighlight %}
+<li>Execute the SQL installation queries from the <i>"install"</i> folder: <b>install.sql, blocks.sql</b><br>
+You can use a data management service of your choice (e.g. phpMyAdmin) or a service of the OXID eShop &gt; Service/Tools</li>
+<li>Edit the file <i>/modules/function.php</i> and add the following line:<br>
+{% highlight php %}require_once 'nrAffilinet/autoloader.php';{% endhighlight %}</li>
+<li>Give write access for the web-user (e.g. 775, 777) to the directories:<br>
+[shoproot]/modules/nrAffilinet/csv/<br>
+[shoproot]/modules/nrAffilinet/out/pictures/logo/
+</li>
+<li>Please empty the <i>"tmp"</i> shop directory</li>
+<li>Open Basic settings (Grundeinstellungen) &gt; System &gt; Moduls (Module) in your shop backend and add the following line:<br>
+oxviewconfig => nrAffilinet/views/nrAffilinetTrackingViewConfig<br>
+(if Multishop/EE add this for all shops, which should use the affilinet module)</li>
+<li>Switch on the production mode (Produktivmodus) under Master data (Stammdaten) &gt; basic settings (Grundeinstellungen) &gt; Master (Stamm), if not done so</li>
+<li>Logout of the backend and login again</li>
+</ol>
+<p><strong>Additional information</strong></p>
+<ul>
+<li>If you create a new shop of your EE version after the module installation, you need to rerun the steps 4. &gt; SQL installation queries (install.sql und blocks.sql) for the new shop.</li>
+<li>To use the automatic product feed generator, it will be necessary to create a cronjob. The following crontab command will help your admin to create the needed cronjob:<br>
+{% highlight html %}
+*/1 * * * * curl "http://[shop-domain-name]/admin/index.php?cl=nraffilinet_feed_main&fnc=cron&keyapi=[WS Benutzername]" > /dev/null 2>&1
+{% endhighlight %}
+<p><strong>Please replace the following placeholder:</strong></p>
+[shop-domain-name] means the shop domain (e.g. www.meinedomain.de)<br>
+[WS Benutzername] means the affilinet webservice username, which you defined within the backend settings of your OXID affilinet module.<br>
+<p>Your webservice account must be created in the affilinet advertiser portal under: <a href="http://advertiser.affili.net/Account/AccountData.aspx" target="_blanc">http://advertiser.affili.net/Account/AccountData.aspx</a></p>
+</li>
+</ul>

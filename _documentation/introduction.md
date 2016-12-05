@@ -6,11 +6,11 @@ slug: introduction
 # chapter sections, also used for building the sidebar navigation
 sections: 
   - slug: introduction-oxidandtheaffilinetmodule
-    title: Magento and the affilinet module
+    title: OXID eShop and the affilinet module
   - slug: introduction-termsofmoduleusage
     title: Module use requirements
   - slug: introduction-supportedoxideditions
-    title: Supported Magento editions
+    title: Supported OXID eShop editions
   - slug: introduction-supportedphpversions
     title: Supported PHP versions
   - slug: introduction-systemrequirements
