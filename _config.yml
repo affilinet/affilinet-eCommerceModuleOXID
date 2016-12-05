@@ -28,7 +28,7 @@ permalink: date
 
 # Collections
 collections:
-  # - documentation
+   - documentation
 
 # Defaults
 defaults:
