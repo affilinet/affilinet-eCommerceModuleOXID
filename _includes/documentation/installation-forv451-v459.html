@@ -1,12 +1,12 @@
 <ol>
 <li>Unzip the affilinet module package</li>
 <li>Copy the folder content <i>"copy_this"</i> in the main directory of your eShop (Upload in binary mode)</li>
-<li>Adjust the templates from the <i>"changed_full"</i> folder to your OXID basic theme templates at the marked lines:</li>
+<li>Adjust the templates from the <i>"changed_full"</i> folder to your OXID basic theme templates at the marked lines:<br>
 {% highlight html %}
 <!-- BEGIN | Affiliate Modul -->
 ....
 <!-- END | Affiliate Modul -->
-{% endhighlight %}
+{% endhighlight %}</li>
 <li>Execute the SQL installation queries from the <i>"install"</i> folder: <b>install.sql, blocks.sql</b><br>
 You can use a data management service of your choice (e.g. phpMyAdmin) or a service of the OXID eShop &gt; Service/Tools</li>
 <li>Edit the file <i>/modules/function.php</i> and add the following line:<br>
@@ -22,6 +22,7 @@ oxviewconfig => nrAffilinet/views/nrAffilinetTrackingViewConfig<br>
 <li>Switch on the production mode (Produktivmodus) under Master data (Stammdaten) &gt; basic settings (Grundeinstellungen) &gt; Master (Stamm), if not done so</li>
 <li>Logout of the backend and login again</li>
 </ol>
+
 <p><strong>Additional information</strong></p>
 <ul>
 <li>If you create a new shop of your EE version after the module installation, you need to rerun the steps 4. &gt; SQL installation queries (install.sql und blocks.sql) for the new shop.</li>

@@ -1,0 +1,19 @@
+<ol>
+<li>Make a backup of your OXID eShop and your database</li>
+<li>Deactivate the affilinet module tracking under <i>"Settings"</i> &gt; <i>Basket/Standard/Retargeting</i></li>
+<li>Unzip the affilinet module package</li>
+<li>Copy the folder content <i>"copy_this"</i> in the main directory of your eShop (Upload in binary mode)</li>
+<li>Adjust the templates from the <i>"changed_full"</i> folder to your OXID basic theme templates at the marked lines:<br>
+{% highlight html %}
+<!-- BEGIN | Affiliate Modul -->
+....
+<!-- END | Affiliate Modul -->
+{% endhighlight %}</li>
+<li>Please empty the <i>"tmp"</i> shop directory</li>
+<li>Logout of the backend and login again</li>
+<li>Reactivate the affilinet module tracking under <i>"Settings"</i> &gt; <i>Basket/Standard/Retargeting</i></li>
+<li>Switch on the production mode (Produktivmodus) under Master data (Stammdaten) &gt; basic settings (Grundeinstellungen) &gt; Master (Stamm), if not done so</li>
+<li>Open the Feed Generator &gt; Standard-Feed and click "forward" ("weiter") or "Save" ("Speichern") to update the feed to the new standard settings </li>
+<div class="well well-sm">Please note, your feeds will still run after the update, but the settings "only active articles" ("Nur aktive Artikel") and "only available articles" ("Nur bestellbare Artikel") are still deactivated.</div>
+</li>
+</ol>
