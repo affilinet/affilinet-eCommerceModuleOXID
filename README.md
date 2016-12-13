@@ -1,7 +1,13 @@
-# affilinet Wordpress Plugin
-The affilinet Wordpress Plugin provides automatic addelivery functionality to affilinet publishers using Wordpress.
+# affilinet OXID eShop Module
+You have chosen the affilinet module for your OXID eShop. This module facilitates your daily work by integrating essential functionalities of our affilinet platform into your usual store.
 
-Find out more on: https://www.affili.net/de/publisher/tools/wordpress-plugin
+The affilinet module enables you to integrate important affiliate marketing features into your OXID eShop. 
+Affilinet presents performance marketing, an attractive, success-based payment model for users directed to your website, high quality, transparent tracking and reporting as well as a sales network with 500.000 publishers (website operators, promoting your products online). 
+This module offers you new customer potentials to expand your reach.
 
-or read the documentation: https://github.com/affilinet/wordpress-plugin/blob/master/Documentation_Publisher_WordPress.pdf
+Using this module offers you concretely:
+* an easy providing of product data feeds to promote your products via dynamically generated ads
+* retargeting of (non-purchasing) store visitors
+* tracking of customers, which were directed to your store via affilinet
+* publisher statistics display of generated clicks, leads and orders
 
