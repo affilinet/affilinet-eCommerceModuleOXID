@@ -20,6 +20,8 @@ mainmenu:
     slug: 
   - title: Documentation
     slug: documentation
+  - title: Support
+    slug: support
 
 # Conversion
 markdown: kramdown
